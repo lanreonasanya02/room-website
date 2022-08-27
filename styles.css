@@ -14,7 +14,6 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  /* width: 28%; */
   padding: 10px 2rem;
   font-size: 12px;
   position: absolute;
@@ -43,6 +42,10 @@ nav {
 }
 
 /* Header section */
+main {
+  display: none;
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr 500px;
@@ -161,16 +164,16 @@ section p {
     font-size: 14px;
   }
 
-  .left-arrow {
-    position: absolute;
-    bottom: 7rem;
-    right: 4rem;
+  .left-arrow,
+  .right-arrow {
+    display: none;
   }
 
-  .right-arrow {
-    position: absolute;
-    bottom: 7rem;
-    right: 1px;
+  main {
+    display: inline;
+    position: relative;
+    bottom: 5rem;
+    left: 21.5rem;
   }
 
   section {
